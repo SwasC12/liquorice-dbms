@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'logo';
+    src: url("../assets/fonts/LEMONMILK-Regular.otf") format('openType');
+}
+
+@font-face {
+    font-family: 'mobile-login';
+    src: url("../assets/fonts/BebasNeue-Regular.woff") format('woff');
+}
+
+/* index.css */
+
+.home-logo {
+    text-align: center;
+}
+
+#logo {
+    font-family: 'logo';
+    color: rgb(73, 57, 57);
+
+}
+
+
+.login-button {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff7576;
+    background-color: #2B3044;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    position: relative;
+    line-height: 24px;
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px #2B3044,
+      0px 4px 16px #2B3044;
+    transform-style: preserve-3d;
+    transform: scale(var(--s, 1)) perspective(600px)
+      rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    perspective: 600px;
+    transition: transform 0.1s;
+  }
+
+  .sign-up-button {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff7576;
+    background-color: #2B3044;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    position: relative;
+    line-height: 24px;
+    border-radius: 9px;
+    box-shadow: 0px 1px 2px #2B3044,
+      0px 4px 16px #2B3044;
+    transform-style: preserve-3d;
+    transform: scale(var(--s, 1)) perspective(600px)
+      rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+    perspective: 600px;
+    transition: transform 0.1s;
+  }
+  
+  .lsp {
+    background: linear-gradient(
+        90deg,
+        #866ee7,
+        #ea60da,
+        #ed8f57,
+        #fbd41d,
+        #2cca91
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: block;
+  }
+
+  .reg {
+    background: linear-gradient(
+        90deg,
+        #866ee7,
+        #ea60da,
+        #ed8f57,
+        #fbd41d,
+        #2cca91
+      );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: block;
+  }
+  
+  .login-button:active {
+    transition: 0.3s;
+    transform: scale(0.93);
+  }
+
+  .sign-up-button:active {
+    transition: 0.3s;
+    transform: scale(0.93);
+  }
+
+
+  .hidden{
+    display: none;
+}
+.form {
+    background-color: #fff;
+    display: block;
+    padding: 1rem;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    position: absolute; /* Position the form absolutely */
+    top: 50%; /* Align the top of the form to the middle of the viewport */
+    left: 50%; /* Align the left of the form to the middle of the viewport */
+    transform: translate(-50%, -50%); /* Center the form horizontally and vertically */
+    z-index: 999;
+  }
+  
+  .form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    font-family: 'mobile-login';
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input, .form button {
+    outline: none;
+    border: 1px solid #e5e7eb;
+    margin: 8px 0;
+  }
+  
+  .input-container input {
+    background-color: #fff;
+    padding: 1rem;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .submit {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #4F46E5;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .signup-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+  
+  .signup-link a {
+    text-decoration: underline;
+  }
+
+
+
+  /* all code below is for mobile */
+
+@media (max-width: 480px) {
+    input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+    #logo{
+        color: rgb(0, 0, 0);
+    }
+    .home-logo{
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 9%;
+        /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    }
+    .login-button-container{
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        top: 50%;
+        left: 10%;
+    }
+    .sign-up-container{
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 60%;
+    }
+
+
+    .hidden{
+        display: none;
+    }
+    .form {
+        background-color: #fff;
+        display: block;
+        padding: 1rem;
+        max-width: 350px;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      
+      .form-title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+      }
+      
+      .input-container {
+        position: relative;
+      }
+      
+      .input-container input, .form button {
+        outline: none;
+        border: 1px solid #e5e7eb;
+        margin: 8px 0;
+      }
+      
+      .input-container input {
+        background-color: #fff;
+        padding: 1rem;
+        padding-right: 0.5rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        width: 300px;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      
+      .submit {
+        display: block;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        background-color: #4F46E5;
+        color: #ffffff;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        width: 100%;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+      }
+      
+      .signup-link {
+        color: #6B7280;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        text-align: center;
+      }
+      
+      .signup-link a {
+        text-decoration: underline;
+      }
+
+}
+
+
+
